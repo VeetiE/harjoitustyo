@@ -1,0 +1,6 @@
+# Viikko1
+Tällä viikolla olen luonut uudne github projektin ja rekisteröinyt sen labtooliin. Otin selvää kurssin eri esimerkki aiheista ja tulin siihen tulokseen, että valitsin Connect4-pelin aiheekseni. Valitsin Connect4 -pelin, koska minimax algorytmi sekä alpha-beta -karsinta olivat selkeämpiä aiheita kuin muissa esimerkki aiheissa.
+Sain tällä viikolla aikaiseksi projektin luomisen githubiin sekä sen rekisteröimisen labtooliin. Loin projektiin tarvittavat dokumentti tiedostot tosin suurin osa niistä ovat vielä tyhjiä, mutta määrittelydokumentin sain tehtyä mielestäni aika hyvin. Alustin myös poetryn 
+Opin paljon minimax-algorytmistä sekä alpha-beta -karsinnasta lukemalla wikipediaa sekä Temple universityn luomaa kurssia tästä aiheesta. Katsoin myös youtube videon, joka liittyi vähän aiheeseen mutta se ei ollut niin informatiivinen kuin olisin toivonut. En vielä täysin kuitenkaan ymmärrä aihetta mutta toivon että kurssin myötä teoreettinen sekä käytännöllinen ymmärrys kasvaa.
+En vielä osaa käytännössä käyttämään minimax-algorytmiä enkä alpha-beta -karsintaa, mutta uskon että kun aloitan koodaamaan projektia niiden käyttäminen alkaa onnistumaan.
+Seuraavaksi aloitan suunnittelemaan koodia ja kirjoittamaan sitä.
