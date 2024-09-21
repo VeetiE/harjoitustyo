@@ -1,11 +1,15 @@
 import unittest
-import board
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+from src.board import Board
 
 class TestBoard(unittest.TestCase):
     
     def setUp(self):
         """Set up a new board before each test."""
-        self.board = board.Board()
+        self.board = Board()
 
     def test_board_initialization(self):
         """Test if the board is initialized with all zeros."""
