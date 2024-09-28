@@ -3,6 +3,7 @@ class Board:
     def __init__(self):
         self.board=self.new_board()
         self.game_ended=False
+        self.score=0
     def new_board(self):
         board=[[0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0],
@@ -22,6 +23,19 @@ class Board:
                 return (row,col)
         return None
     
+    def check_score(self, counter, chip):
+            if counter==4 and chip==2:
+                self.score+=1000
+            if counter==3 and chip==2:
+                self.score+=100
+            if counter==2 and chip==2:
+                self.score+=10
+            if counter==4 and chip==1:
+                self.score-=1000
+            if counter==3 and chip==1:
+                self.score-=100
+            if counter==2 and chip==1:
+                self.score-=10
     def check_if_win(self, row, col):
         chip=self.board[row][col]
         if chip==0:
@@ -31,6 +45,7 @@ class Board:
             for c in range(max(0, col - 3), min(6, col + 3) + 1):
                 if self.board[row][c]==chip:
                     counter+=1
+                    self.check_score(counter, chip)
                     if counter==4:
                         return True
                 else:
@@ -41,8 +56,11 @@ class Board:
             for r in range(max(0, row-3), min(5, row+3)+1):
                 if self.board[r][col]==chip:
                     counter+=1
+                    """self.check_score(counter, chip)"""
                     if counter==4:
                         return True
+                    
+                    
                 else:
                     counter=0
         def check_diagonal():
@@ -55,6 +73,7 @@ class Board:
                 c-=1
             while r<=5 and c<=6:
                 if self.board[r][c]==chip:
+                    """self.check_score(counter, chip)"""
                     counter+=1
                     if counter==4:
                         return True
@@ -74,6 +93,7 @@ class Board:
             while r<=5 and c>=0:
                 if self.board[r][c]==chip:
                     counter+=1
+                    """self.check_score(counter, chip)"""
                     if counter==4:
                         return True
                 else:
